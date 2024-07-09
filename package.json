@@ -9,18 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.50.1",
+    "connectkit-next-siwe": "^0.3.0",
+    "ethers": "^6.13.1",
+    "ipfs-http-client": "^60.0.1",
+    "next": "14.2.4",
+    "openpgp": "^5.11.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "viem": "^2.17.2",
+    "wagmi": "^2.10.9",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "typescript": "^5"
   }
 }
