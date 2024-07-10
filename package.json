@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tsc": "tsc"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.8",
     "@tanstack/react-query": "^5.50.1",
     "connectkit-next-siwe": "^0.3.0",
     "ethers": "^6.13.1",
+    "graphql": "^16.9.0",
     "ipfs-http-client": "^60.0.1",
     "next": "14.2.4",
     "openpgp": "^5.11.2",
