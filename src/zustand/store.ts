@@ -1,13 +1,15 @@
-import { create, SetState } from "zustand";
+import create from "zustand";
 
 interface StoreState {
-  keys: any[];
-  addKey: (key: any) => void;
+  userAddress: string;
+  ipfsHash: string;
+  setUserAddress: (address: string) => void;
+  setIpfsHash: (hash: string) => void;
 }
 
-const useStore = create<StoreState>((set: SetState<StoreState>) => ({
-  keys: [],
-  addKey: (key: any) => set((state) => ({ keys: [...state.keys, key] })),
+export const useStore = create<StoreState>((set) => ({
+  userAddress: "",
+  ipfsHash: "",
+  setUserAddress: (address) => set({ userAddress: address }),
+  setIpfsHash: (hash) => set({ ipfsHash: hash }),
 }));
-
-export default useStore;
