@@ -1,40 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Decentralized PGP Key Server
+
+## Summary
+
+This project aims to create a decentralized key server for PGP keys using attestations. The goal is to make it easy for users to attest that a public key is valid and display a trust score for that key’s validity, creating a web of trust model between users and their public keys.
+
+## Features
+
+- **Attestations**: Allow users to easily attest to the validity of a PGP key.
+- **Trust Score**: Create a trust score based on attestations between keys.
+- **Trust Verification**: Check the trust score for a given key.
 
 ## Getting Started
 
-First, run the development server:
+This is a Next.js project bootstrapped with `create-next-app`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- npm, yarn, pnpm, or bun
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/lucas-op/decentralized-pgp-key-server.git
+    cd decentralized-pgp-key-server
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. **Install dependencies**:
+    ```sh
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Run the development server**:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
 
-## Learn More
+4. **Open the application**:
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## API Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Endpoints
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **POST /attestations**: Add an attestation for a PGP key.
+- **GET /keys/{keyId}/trust-score**: Get the trust score for a given key.
+- **GET /keys/{keyId}/attestations**: Get all attestations for a given key.
 
-## Deploy on Vercel
+### Example Requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Attest to a Key
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
