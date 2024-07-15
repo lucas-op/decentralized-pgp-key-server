@@ -64,6 +64,6 @@ This is a Next.js project bootstrapped with `create-next-app`.
 
 #### Attest to a Key
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
