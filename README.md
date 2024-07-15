@@ -12,8 +12,6 @@ This project aims to create a decentralized key server for PGP keys using attest
 
 ## Getting Started
 
-This is a Next.js project bootstrapped with `create-next-app`.
-
 ### Prerequisites
 
 - Node.js
@@ -56,7 +54,6 @@ This is a Next.js project bootstrapped with `create-next-app`.
 
 ### Endpoints
 
-- **POST /attestations**: Add an attestation for a PGP key.
 - **GET /keys/{keyId}/trust-score**: Get the trust score for a given key.
 - **GET /keys/{keyId}/attestations**: Get all attestations for a given key.
 
@@ -66,4 +63,9 @@ This is a Next.js project bootstrapped with `create-next-app`.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For any questions or suggestions, feel free to open an issue.
+
 
